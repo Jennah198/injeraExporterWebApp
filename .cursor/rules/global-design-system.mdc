@@ -1,0 +1,44 @@
+---
+description: Global frontend design system constraints
+alwaysApply: true
+---
+
+# Global Design Rules
+
+Apply these rules to all frontend UI work.
+
+## Typography
+- Headlines (`h1`, `h2`) must use `font-display` (Playfair Display).
+- All other text must use `font-body` (Lato).
+- Never use Inter, Roboto, or `system-ui` as display fonts.
+
+## Colors
+- Primary action: `bg-terracotta` (`#C8531A`) for buttons, CTAs, accents.
+- Secondary: `bg-forest` (`#2D5016`) for certifications and success states.
+- Accent: `text-gold` / `bg-gold` (`#F5C842`) for stats, star ratings, highlights.
+- Page background: `bg-linen` (`#FAF7F2`) for light sections.
+- Dark sections: `bg-espresso` (`#1A1208`) for video section, contact, footer.
+- Body text: `text-warmBrown` (`#2C1A0E`).
+
+## Animations
+- Use Framer Motion `whileInView` for all scroll-triggered animations.
+- Use `viewport={{ once: true, margin: "-100px" }}` for scroll-triggered animations.
+- Do not animate on initial page load except Hero.
+- Stagger delay between sibling elements: `0.15s`.
+- Duration: `0.6-0.8s`, easing: `"easeOut"`.
+
+## Spacing
+- Section vertical padding: `py-24` on desktop and `py-16` on mobile.
+- Max content width: `max-w-6xl mx-auto`.
+- Section horizontal spacing: `px-4 sm:px-6 lg:px-8`.
+
+## Responsiveness
+- Use a mobile-first approach.
+- Use breakpoints: `sm` (640), `md` (768), `lg` (1024), `xl` (1280).
+- Validate each section at `375px`.
+
+## Accessibility
+- Every image must have descriptive `alt` text.
+- All interactive elements must have `focus-visible` styles.
+- Form labels must be properly associated with inputs (`htmlFor` + `id`).
+- Maintain minimum `4.5:1` color contrast ratio for all text.

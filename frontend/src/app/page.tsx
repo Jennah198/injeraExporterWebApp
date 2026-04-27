@@ -1,6 +1,7 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
+import Categories from '@/components/sections/Categories'
 import ProductShowcase from '@/components/sections/ProductShowcase'
 import VideoSection from '@/components/sections/VideoSection'
 import HowToOrder from '@/components/sections/HowToOrder'
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <Categories />
       <ProductShowcase />
       <VideoSection />
       <HowToOrder />
